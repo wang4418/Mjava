@@ -5,12 +5,14 @@ import java.util.ArrayList;
 
 public class Say {
 
-    private static final qwe cst=new qwe();
+
     public static final int NUM = 1;
 
 
     public static void main(String[] args) {
-
+        for (int i = 0; i < 100; i++) {
+            System.out.println(i);
+        }
         ArrayList list=new ArrayList();
         list.add(123);
         list.add(456);
