@@ -35,7 +35,7 @@ public class ArraysDemo05 {
         int[] s=paiXun(arrays2);
         System.out.println(Arrays.toString(s));
     }
-
+//2
     public static int[] paiXun(int[]arr){
         int max=0;
         for (int i = 0; i <arr.length-1 ; i++) {
