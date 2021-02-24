@@ -14,6 +14,7 @@ public class ArraysDemo05 {
     public static void main(String[] args) {
         //冒泡排序
         int[]arrays={5,8,3,4,1};
+
         int max=0;
         //轮数
         for (int i = 0; i < arrays.length; i++) {
@@ -27,9 +28,16 @@ public class ArraysDemo05 {
                 }
 
             }
-
-            System.out.println(arrays[i]);
         }
+        //System.out.println(Arrays.toString(arrays));
+//        for (int i = 0; i < arrays.length; i++) {
+//            System.out.println(arrays[i]);
+//        }
+        for (int array : arrays) {
+            System.out.println(array);
+        }
+
+
 
         int[]arrays2={5,8,3,4,1};
         int[] s=paiXun(arrays2);
@@ -40,7 +48,7 @@ public class ArraysDemo05 {
         int max=0;
         for (int i = 0; i <arr.length-1 ; i++) {
             for (int j = 0; j <arr.length-1-i ; j++) {
-                if (arr[j+1]>arr[j]){
+                if (arr[j]>arr[j+1]){
                     max=arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=max;
